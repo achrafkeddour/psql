@@ -9,11 +9,11 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const pool = new Pool({
-    host: 'dpg-cnu9h5a0si5c73ds58mg-a.oregon-postgres.render.com',
-    user: 'keddour',
-    password: 'ajHdWafoMvmbFB8erfBgqkdjafOUxdzU',
-    database: 'achraf_16qa',
+const pool = new Pool({ //you should host a database to do this
+    host: 'your hostname here',
+    user: 'username ta3k also',
+    password: 'password ta3k',
+    database: 'your database here',
     port: 5432, // PostgreSQL port
     ssl: {
         rejectUnauthorized: false // For Render's PostgreSQL SSL
